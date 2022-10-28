@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pipesApp';
-  nombre:string = 'joSé LuIS';
-  valor:number = 200000000;
+  nombre:string = 'joSé LuIS rIveRa avEliNo';
+  valor:number = 900600100;
   MostrarNombre(){
-   console.log(this.nombre);
+    
   }
 }
