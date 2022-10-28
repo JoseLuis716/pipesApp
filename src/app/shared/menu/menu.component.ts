@@ -15,25 +15,25 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
     this.items = [
       {
-          label: 'File',
+          label: 'Archivo',
           items: [{
-                  label: 'New', 
+                  label: 'Nuevo', 
                   icon: 'pi pi-fw pi-plus',
                   items: [
-                      {label: 'Project'},
-                      {label: 'Other'},
+                      {label: 'Proyecto'},
+                      {label: 'Otros'},
                   ]
               },
-              {label: 'Open'},
-              {label: 'Quit'}
+              {label: 'Abrir'},
+              {label: 'Cerrar'}
           ]
       },
       {
-          label: 'Edit',
+          label: 'Editar',
           icon: 'pi pi-fw pi-pencil',
           items: [
-              {label: 'Delete', icon: 'pi pi-fw pi-trash'},
-              {label: 'Refresh', icon: 'pi pi-fw pi-refresh'}
+              {label: 'Borrar', icon: 'pi pi-fw pi-trash'},
+              {label: 'Recargar', icon: 'pi pi-fw pi-refresh'}
           ]
       }
   ];
