@@ -1,19 +1,53 @@
-<div class="text-layout"><!-- Esa clase la definimos en el css, es propia -->
-    <h1>pipes basicos</h1>
-    <p>Pipes incluidos en Angular - Usualmente en Common Module</p>
+<div class="text-layout">
+    <!-- Esa clase la definimos en el css, es propia -->
+    <h1>Pipes básicos</h1>
+    <p>Pipes incluidos en Angular - Usualmente en Common Module, estos Pipes
+        NO MODIFICAN al valor de la variable, solo lo transforman visualmente </p>
 </div>
 
 <div class="text-layout">
 
-<div class="p-grid">
-    <div class="p-col-4">
-        <p-card header="uppercase"></p-card>
-    </div>
-    <div class="p-col-4">
-        <p-card header="lowercase"></p-card>
-    </div>
-    <div class="p-col-4">
-        <p-card header="tittlecase"></p-card>
+    <div class="p-grid">
+        <div class="p-col-4">
+            <p-card header="uppercase" [subheader]="cDefinicionUpper | uppercase">
+                <p>Valor: "{{cDefinicionUpper}}";<br> Código:</p>
+                <code> [subheader] = "cDefinicionUpper | uppercase" </code>
+            </p-card>
+        </div>
+        <div class="p-col-4">
+            <p-card header="lowercase" [subheader]="cDefinicionLower | lowercase">
+                <p>Valor: "{{cDefinicionLower}}";<br> Código:</p>
+                <code> [subheader] = "cDefinicionLower | lowercase" </code>
+            </p-card>
+        </div>
+        <div class="p-col-4">
+            <p-card header="tittlecase" [subheader]="cDefinicionTittle | titlecase">
+                <p>Valor: "{{cDefinicionTittle}}";<br> Código:</p>
+                <code> [subheader] = "cDefinicionTittle | titlecase" </code>
+            </p-card>
+        </div>
     </div>
 </div>
+
+<div class="text-layout">
+    <!-- Esa clase la definimos en el css, es propia -->
+    <h1>Date | Fecha | Pipe</h1>
+    <p>Pipes para dar formato a fecha</p>
+
+    <div class="p-grid">
+        <div class="p-col-6">
+            <p-card >
+                <ul>
+                    <li></li>
+                </ul>
+            </p-card>
+        </div>
+        <div class="p-col-6">
+            <p-card >
+                <ul>
+                    <li></li>
+                </ul>
+            </p-card>
+        </div>
+    </div>
 </div>

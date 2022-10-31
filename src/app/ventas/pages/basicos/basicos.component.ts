@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-basicos',
@@ -6,11 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class BasicosComponent implements OnInit {
-
+export class BasicosComponent {
+  cDefinicionUpper: string = "convierte texto a mayúsculas";
+  cDefinicionLower: string = "CONVIERTE TEXTO A MINUSCULAS";
+  cDefinicionTittle: string = "caPitAlizA eL tExTo  ";
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }
