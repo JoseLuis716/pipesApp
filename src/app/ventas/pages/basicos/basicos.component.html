@@ -32,7 +32,9 @@
 <div class="text-layout">
     <!-- Esa clase la definimos en el css, es propia -->
     <h1>Date | Fecha | Pipe</h1>
-    <p>Pipes para dar formato a fecha</p>
+    <p>Pipes para dar formato a fecha considerando la declaracion: <strong>
+        <code>fecha: Date = new Date();</code>
+    </strong></p>
 
     <div class="p-grid">
         <div class="p-col-6">
@@ -42,6 +44,12 @@
                     <li><code>Fecha | date</code></li>
                     <li><code>Fecha | date: 'short'</code></li>
                     <li>Personalizada: <code>Fecha | date: 'cccc dd/MMMM/YYYY h:mm a'</code></li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><code>Fecha en los cabos </code> <strong>(fecha | date: 'long':'GMT-7')</strong></li>
+                    <li><code>Fecha en Cozumel</code></li>
+                    <li><code>fecha | date: 'long':'':'fr'</code></li>
                 </ul>
             </p-card>
         </div>
@@ -53,6 +61,12 @@
                     <li>{{fecha | date: 'short'}}</li>
                     <li>{{fecha | date: 'cccc dd/MMMM/YYYY h:mm a'}}</li>
                 </ul>   
+                <hr>
+                <ul>
+                    <li>{{fecha | date: 'long':'GMT-7'}}</li>
+                    <li>{{fecha | date: 'long':'GMT-5'}}</li>
+                    <li>{{fecha | date: 'long':'':'fr'}}</li> <!-- frances -->
+                </ul>
             </p-card>
         </div>
     </div>
