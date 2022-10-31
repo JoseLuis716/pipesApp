@@ -10,7 +10,7 @@ const rutas: Routes = [
   }, {
     path: 'numeros', component: NumerosComponent
   }, {
-    path: 'nocomunes', component: NoComunesComponent
+    path: 'no-comunes', component: NoComunesComponent
   }, {
     path: 'ordenar', component: OrdenarComponent
   }, {
