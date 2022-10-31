@@ -1,1 +1,32 @@
-<p>numeros works!</p>
+<div class="text-layout">
+    <!-- Esa clase la definimos en el css, es propia -->
+    <h1>Pipes decimal y porcentaje</h1>
+    <p>Pipes incluidos en Angular - Usualmente en Common Module, estos Pipes
+        NO MODIFICAN al valor de la variable, solo lo transforman visualmente </p>
+</div>
+
+<div class="text-layout">
+
+    <div class="p-grid">
+        <div class="p-col-4">
+            <p-card header="Ventas Netas" subheader="Consideradas del presente año">
+                <i class="pi pi-dollar"></i>
+                {{ (dVentasNetas + 120833229) | number:'1.2-2'}}
+            </p-card>
+        </div>
+
+ 
+        <div class="p-col-4">
+            <p-card header="Ventas Brutas" subheader="Consideradas del presente año">
+                {{ (dVentasNetas + 220833229) |currency:'MXN':'symbol-narrow':'1.4-4'}}
+            </p-card>
+        </div> 
+ 
+        <div class="p-col-4">
+            <p-card header="Ganancias" subheader="Consideradas de las acciones">
+                {{ dPorcentaje | percent:'2.2-2' }}
+            </p-card>
+        </div> 
+
+    </div>
+</div>
