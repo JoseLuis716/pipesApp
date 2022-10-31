@@ -10,6 +10,8 @@ export class BasicosComponent {
   cDefinicionUpper: string = "convierte texto a mayúsculas";
   cDefinicionLower: string = "CONVIERTE TEXTO A MINUSCULAS";
   cDefinicionTittle: string = "caPitAlizA eL tExTo  ";
+  //fecha
+  fecha: Date = new Date(); //dia de hoy
   constructor() { }
 
 }

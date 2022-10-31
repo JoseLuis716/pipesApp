@@ -38,15 +38,21 @@
         <div class="p-col-6">
             <p-card >
                 <ul>
-                    <li></li>
+                    <li>Fecha:</li>
+                    <li><code>Fecha | date</code></li>
+                    <li><code>Fecha | date: 'short'</code></li>
+                    <li>Personalizada: <code>Fecha | date: 'cccc dd/MMMM/YYYY h:mm a'</code></li>
                 </ul>
             </p-card>
         </div>
         <div class="p-col-6">
             <p-card >
                 <ul>
-                    <li></li>
-                </ul>
+                    <li>{{fecha}}</li>
+                    <li>{{fecha | date}}</li>
+                    <li>{{fecha | date: 'short'}}</li>
+                    <li>{{fecha | date: 'cccc dd/MMMM/YYYY h:mm a'}}</li>
+                </ul>   
             </p-card>
         </div>
     </div>
