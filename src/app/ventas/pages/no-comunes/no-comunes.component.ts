@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-no-comunes',
@@ -6,11 +6,26 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class NoComunesComponent implements OnInit {
+export class NoComunesComponent {
 
-  constructor() { }
+  cNombre: string = "Fernando";
+  cGenero: string = "masculino";
 
-  ngOnInit(): void {
+  //i18nSelect
+  invitacionMap={
+    'masculino': 'invitarlo',
+    'femenino' : 'invitarla'
   }
+
+  //i18nPlural
+  clientes: string[] = ['Maria','Pedro','Luis','Ana'];
+
+  clientesMap = {
+    '=0': 'no tenemos ningun cliente esperando.',
+    '=1': 'tenemos un cliente esperando.',
+    'other': 'tenemos # clientes esperando'
+  }
+  constructor() { }
+ 
 
 }
