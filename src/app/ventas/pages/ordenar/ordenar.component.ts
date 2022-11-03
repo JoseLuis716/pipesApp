@@ -8,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrdenarComponent implements OnInit {
 
+  lCambio:boolean = true;
   constructor() { }
 
   ngOnInit(): void {
+  }
+  Cambiar(){
+    return this.lCambio = !this.lCambio;
   }
 
 }
