@@ -1,14 +1,14 @@
 # PipesApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3.
+Proyecto generado con [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Ejecute el comando `ng serve --o` Para un servidor de desarrollo. Navegar a `http://localhost:4200/`. La aplicacion se recargará automáticamente si se realiza un cambio en algunos de sus archivos.
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Ejecute  `ng generate component component-name` para generar un nuevo componente. Tambien puede usar `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
