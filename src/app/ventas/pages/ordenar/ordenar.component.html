@@ -1,5 +1,45 @@
-<div class="text-layout"><!-- Esa clase la definimos en el css, es propia -->
+<div class="text-layout">
+    <!-- Esa clase la definimos en el css, es propia -->
     <h1>Pipes personalizados</h1>
     <p>Pipes creados por {{'nosotros' | mayusculas:lCambio }} </p>
-    <button pButton type="button" label="Cambio" (click)="Cambiar()"></button>
+</div>
+
+<p-toolbar>
+    <div class="p-toolbar-group-left">
+
+    </div>
+
+    <div class="p-toolbar-group-right">
+        <button pButton type="button" label="Cambio" (click)="Cambiar()" class="p-mr-1"></button>
+
+        <button pButton pRipple type="button" icon="pi pi-sort" (click)="Ordenar()" label="Ordenar por nombre"
+            class="p-mr-1 p-button-info"></button>
+
+        <button pButton pRipple type="button" icon="pi pi-sort" label="Vuela"
+            class="p-mr-1 p-button-success"></button>
+
+        <button pButton pRipple type="button" icon="pi pi-sort" label="Por color"
+            class="p-mr-1 p-button-warning"></button>
+    </div>
+</p-toolbar>
+
+<div class="p-grid">
+    <div class="p-col p-mt-3">
+        <p-table [value]="Heroes | ordenar" responsiveLayout="scroll">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Vuela</th>
+                    <th>Color</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-heroe>
+                <tr>
+                    <td>{{heroe.nombre}}</td>
+                    <td>{{heroe.vuela | vuela | titlecase}}</td>
+                    <td>{{heroe.color}}</td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
 </div>
