@@ -10,6 +10,7 @@ import { Color, Heroe } from '../../interfaces/ventas.interfaces';
 export class OrdenarComponent {
 
   lCambio: boolean = true;
+  cOrdenarPor : string = "";
   Heroes: Heroe[] = [{
     nombre: 'Iron Man',
     vuela: true,
@@ -32,8 +33,8 @@ export class OrdenarComponent {
   Cambiar() {
     return this.lCambio = !this.lCambio;
   }
-  Ordenar() {
-
+  Ordenar(cFiltro : string) {
+    this.cOrdenarPor = cFiltro;
   }
 
 
